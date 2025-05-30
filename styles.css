@@ -1,66 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: url('bg.jpg') no-repeat center center fixed; /* Add your image URL */
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .container {
-    background: rgba(255, 255, 255, 0.8); /* Transparent background to enhance readability */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .generator {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    width: 250px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-right: 10px;
-    font-size: 1.2rem;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    background: #28a745;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #218838;
-  }
-  
-  .options label {
-    display: block;
-    margin: 10px 0;
-  }
-  
-  input[type="number"] {
-    padding: 5px;
-    width: 50px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+.container {
+  background: rgba(255 255 255 / 0.1);
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+  user-select: none;
+}
+
+h1 {
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1.1px;
+}
+
+.password-box {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.password-box input {
+  width: 100%;
+  padding: 0.9rem 3rem 0.9rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255 255 255 / 0.15);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.password-box input::placeholder {
+  color: rgba(255 255 255 / 0.6);
+}
+
+.password-box button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.password-box button:hover {
+  color: #ffd700;
+}
+
+.settings {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.settings label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.settings input[type="number"] {
+  width: 60px;
+  border-radius: 6px;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: rgba(255 255 255 / 0.15);
+  color: #fff;
+}
+
+button#generateBtn {
+  background: #ffd700;
+  border: none;
+  padding: 0.85rem 1.6rem;
+  border-radius: 10px;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  width: 100%;
+  user-select: none;
+}
+
+button#generateBtn:hover {
+  background: #e6c200;
+}
+
+.strength {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.strength span {
+  color: #ffd700;
+  font-weight: 700;
+}
+
   
   
